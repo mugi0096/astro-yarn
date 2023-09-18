@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import OccurError from '../components/OccurError.svelte';
+---
+<Layout title="simulate error">
+ <h1>Error Simulate</h1>
+ <p>このページではエラーを起こすことができます</p>
+ <p>ディベロッパーツールのコンソールログで確認することができます。</p>
+ <OccurError client:load />
+</Layout>
