@@ -1,5 +1,6 @@
 ---
 import Header from '../components/Header.astro';
+import Head from './Head.astro';
 
 interface Props {
 	title: string;
@@ -10,14 +11,7 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="ja">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
+	<Head>{title}</Head>
 	<body>
 		<Header />
 		<main class="flex flex-col items-center">
