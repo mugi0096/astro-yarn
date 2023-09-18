@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import InputSection from '../components/InputSection.svelte'
+---
+<Layout title="Welcome to Datadog test page.">
+  <h1 class="text-lg font-bold">About</h1>
+  <p>ページ遷移のためだけに作られたページです。</p>
+  <p>以下の入力欄は Svelte で作られたコンポーネントです。</p>
+  <InputSection client:load />
+</Layout>
